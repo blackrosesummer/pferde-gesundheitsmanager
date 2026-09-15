@@ -1,11 +1,11 @@
 :root {
   color-scheme: dark;
-  --background: #071d15;
-  --surface: #1d4b38;
-  --surface-soft: #123526;
-  --gold: #edc563;
-  --text: #f5f1e7;
-  --muted: #b9c5bb;
+  --background: #0D1D15;
+  --surface: #234332;
+  --surface-soft: #234432;
+  --gold: #E5C06A;
+  --text: #F5F1E8;
+  --muted: #AEBBB2;
   --line: rgba(237, 197, 99, .24);
   --warning: #fff0bf;
   --warning-text: #49360c;
@@ -25,7 +25,7 @@ body {
 .hero { padding: 72px 24px 42px; border-bottom: 1px solid var(--line); }
 .hero__inner, main, nav, footer { width: min(920px, calc(100% - 40px)); margin-inline: auto; }
 .hero__inner { display: flex; align-items: center; gap: 28px; }
-.logo { width: 112px; height: 112px; flex: 0 0 112px; display: grid; place-items: center; border: 1px solid var(--gold); border-radius: 26px; color: var(--gold); font-weight: 850; letter-spacing: .06em; box-shadow: 0 16px 40px rgba(0,0,0,.25); }
+.logo { width: 112px; height: 112px; flex: 0 0 112px; object-fit: cover; border-radius: 26px; box-shadow: 0 16px 40px rgba(0,0,0,.25); }
 .eyebrow { margin: 0; color: var(--gold); font-weight: 750; letter-spacing: .04em; }
 h1 { margin: 4px 0 8px; font-size: clamp(2.2rem, 6vw, 4.4rem); line-height: 1.05; }
 .intro { max-width: 650px; margin: 0; color: var(--muted); }
@@ -40,10 +40,9 @@ main { display: grid; gap: 24px; padding: 24px 0 72px; }
 h2 { margin: 2px 0 20px; font-size: clamp(1.8rem, 4vw, 2.7rem); line-height: 1.15; }
 h3 { margin: 32px 0 8px; color: var(--gold); font-size: 1.15rem; }
 .button { display: inline-block; margin-top: 8px; padding: 13px 20px; border-radius: 14px; background: var(--gold); color: #10251c; font-weight: 800; text-decoration: none; }
-.placeholder-note { margin-top: 18px; color: var(--muted); font-size: .92rem; }
-.placeholder-box { margin: 22px 0 34px; padding: 20px; border-radius: 16px; background: var(--warning); color: var(--warning-text); }
-.placeholder-box p { margin: 5px 0 0; }
-mark { background: rgba(237,197,99,.18); color: var(--gold); padding: 2px 5px; border-radius: 4px; }
+.legal p { max-width: 75ch; }
+.legal li { margin-bottom: 6px; }
+.legal a, footer a { color: var(--gold); }
 .updated { margin-top: 32px; color: var(--muted); }
 footer { border-top: 1px solid var(--line); padding: 32px 0 50px; color: var(--muted); }
 footer p { margin: 2px 0; }
